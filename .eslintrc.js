@@ -1,5 +1,8 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   extends: [
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
@@ -16,6 +19,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-function-return-type': false,
     '@typescript-eslint/camelcase': false,
+    '@typescript-eslint/no-explicit-any': false,
   },
   settings: {
     react: {

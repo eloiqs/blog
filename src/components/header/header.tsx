@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Header = ({ siteTitle }: Props) => (
-  <div
+  <header
     style={{
       background: 'rebeccapurple',
       marginBottom: '1.45rem',
@@ -31,7 +31,7 @@ const Header = ({ siteTitle }: Props) => (
         </Link>
       </h1>
     </div>
-  </div>
+  </header>
 )
 
 export default Header

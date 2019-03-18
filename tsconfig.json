@@ -19,5 +19,5 @@
     "esModuleInterop": true,
     "downlevelIteration": true
   },
-  "include": ["src/**/*"]
+  "include": ["jest-dom.d.ts", "src/**/*"]
 }
