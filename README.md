@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  My Gatsby typescript starter
+  My Gatsby Typescript starter
 </h1>
 
 Kick off your project with this typescript, eslint, prettier and jest boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
