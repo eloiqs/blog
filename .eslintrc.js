@@ -20,6 +20,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': false,
     '@typescript-eslint/camelcase': false,
     '@typescript-eslint/no-explicit-any': false,
+    'react/prop-types': false
   },
   settings: {
     react: {
