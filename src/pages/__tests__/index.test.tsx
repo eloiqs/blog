@@ -31,15 +31,15 @@ beforeEach(() => {
 })
 
 describe(`Index`, () => {
-  it(`contains a gatsby image`, () => {
-    const { getByTestId } = render(<Index />)
-    const node = getByTestId(`gatsby-logo`)
-    expect(node.querySelectorAll(`picture`)).toHaveLength(1)
-  })
+  const data = {
+    allMarkdownRemark: {
+      totalCount: 0,
+      edges: [],
+    },
+  }
 
-  it(`contains a greeting`, () => {
-    const { getByText } = render(<Index />)
-    const greeting = getByText(`Hi people`)
-    expect(greeting).toBeInTheDocument()
+  it(`renders`, () => {
+    const { container } = render(<Index data={data} />)
+    expect(container).toBeInTheDocument()
   })
 })

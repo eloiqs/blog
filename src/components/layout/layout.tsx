@@ -5,11 +5,9 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import { graphql, StaticQuery } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 import Header from '../header'
-import './layout.css'
 
 interface Props {
   children: React.ReactNode
@@ -48,9 +46,5 @@ const Layout = ({ children }: Props) => (
     )}
   />
 )
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout
