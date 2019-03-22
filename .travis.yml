@@ -6,5 +6,5 @@ node_js:
   - stable
 
 script:
-  - yarn build
+  - yarn build --prefix-paths
   - bash ./scripts/deploy.sh
